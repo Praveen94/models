@@ -1211,6 +1211,9 @@ def visualize_boxes_and_labels_on_image_array(
               class_name = 'N/A'
             if "ball" in class_name:
               balls+=1
+              class_name = "ball"
+            if class_name!="ball":
+              continue
             display_str = str(class_name)
         if not skip_scores:
           if not display_str:
